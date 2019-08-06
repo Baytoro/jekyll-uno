@@ -1,6 +1,6 @@
 # Site settings
-title: Home|HJ.Chen
-description: 'Jhohohohohohohoh'
+title: Home | HJ.Chen
+description: 'This is description'
 url: 'http://baytoro.github.io/'
 
 baseurl: ''
@@ -10,9 +10,9 @@ baseurl: ''
 author:
   name: 'Hongjiang Chen'
   email: hjchen0725@hotmail.com
-  twitter_username: joshgerdes
+  twitter_username: nodd
   facebook_username: joshgerdes
-  github_username:  joshgerdes
+  github_username:  baytoro
   linkedin_username:  joshgerdes
 
 defaults:
