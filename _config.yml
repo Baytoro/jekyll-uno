@@ -1,9 +1,9 @@
 # Site settings
 title: Home|HJ.Chen
 description: 'Jhohohohohohohoh'
-url: 'http://baytoro.github.io/'
+url: 'http://baytoro.github.io/jekyll-uno/'
 
-baseurl: '/jekyll-uno'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 
