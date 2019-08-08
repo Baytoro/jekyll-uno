@@ -953,8 +953,8 @@ h5,
 h5 {
 	margin-top: .8em;
 	margin-bottom: .4em;
-	font-family: "Roboto Slab", serif;
-	font-weight: lighter;
+	//font-family: "Roboto Slab", serif;
+	font-weight: 500;
 	color: #333333;
 	-webkit-font-smoothing: antialiased; }
 
@@ -980,7 +980,7 @@ h5 {
 	font-size: 1em; }
 
 p {
-	margin-bottom: 1.3em;
+	margin-bottom: 1.5em;
 	line-height: 1.7em; }
 
 strong {
@@ -1191,8 +1191,8 @@ hr {
 
 .panel-title {
 	margin: 0 0 5px 0;
-	font-size: 2.5em;
-	letter-spacing: 4px;
+	font-size: 1.8em;
+	letter-spacing: .5px;
 	color: #FFF; }
 
 .panel-subtitle {
@@ -1236,8 +1236,8 @@ hr {
 	margin: 0 30px; }
 
 .panel-cover__divider {
-	width: 50%;
-	margin: 20px auto;
+	//width: 36%;
+	margin: 10px auto;
 	border-top: 1px solid rgba(255, 255, 255, 0.14); }
 
 .panel-cover__divider--secondary {
@@ -1565,7 +1565,7 @@ input[type="tel"] {
 		width: 70px; }
 
 	.panel-title {
-		font-size: 2em; }
+		font-size: 1.8em; }
 
 	.panel-subtitle {
 		font-size: 1em; }
