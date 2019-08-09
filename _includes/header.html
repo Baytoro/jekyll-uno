@@ -3,90 +3,155 @@
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
 </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
+<header class="panel-cover" >
   <div class="panel-main">
 
-    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__inner panel-inverted"style="background-image: url({{ site.baseurl }}/images/sky.jpg);background-size: cover;background-color: #000000">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.author.name }}</h1>
+        <a href="{{ site.baseurl }}/" title="link to {{ site.title }}">
+          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo" >
         </a>
-        <hr class="panel-cover__divider" style="width: 220px;">
-        <p class>{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
-
+           <h1 class="panel-cover__title panel-title" style="margin-top: 10px;">{{ site.author.name }}</h1>
+       <hr class="panel-cover__divider" style="width: 220px;">
+        <p class style="opacity: 0.5;font-family:Helvetica, Arial, sans-serif">{{ site.description }}</p>
+<!--        <hr class="panel-cover__divider panel-cover__divider&#45;&#45;secondary">-->
+<!--        <hr class="panel-cover__divider panel-cover__divider&#45;&#45;secondary">-->
+<!--        <hr class="panel-cover__divider panel-cover__divider&#45;&#45;secondary">-->
+<!--        <hr class="panel-cover__divider panel-cover__divider&#45;&#45;secondary">-->
+<!--        <hr class="panel-cover__divider panel-cover__divider&#45;&#45;secondary">-->
         <div class="navigation-wrapper">
-
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item">
+                <a href="{{ site.baseurl }}/#blog" title="link to my intro" class="blog-button" style="border: 1.5px solid #ffffff;opacity: 1;">About</a>
+              </li>
             </ul>
           </nav>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item">
+                <a href="{{ site.baseurl }}/#blog" title="link to my blogs" class="blog-button" style="border: 1.5px solid #ffffff;opacity: 1;">Blogs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
+        <div class="navigation-wrapper">
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/peiyuan-liao" title="LinkedIn" class="no-mark-external">
-                  <span class="icon-linkedin2"></span> <span class="sr-only">LinkedIn</span> 
-                </a>
-              <li>
-            {% endif %}
-
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
-
             {% if site.author.github_username %}
-              <!-- GitHub -->
+<!--               GitHub -->
               <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="GitHub" target="_blank">
+                  <i class="iconfont icon-git"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Email -->
+            {% if site.author.kaggle_username %}
+<!--               Kaggle -->
               <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
+                <a href="https://www.kaggle.com/{{ site.author.kaggle_username }}" title="Kaggle" target="_blank">
+                  <i class="iconfont icon-kaggle"></i>
+                  <span class="label">Kaggle</span>
                 </a>
               </li>
             {% endif %}
 
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
+            {% if site.author.zhihu_username %}
+<!--               Zhihu -->
+              <li class="navigation__item">
+                <a href="https://www.zhihu.com/people/{{ site.author.zhihu_username }}/activities" title="Zhihu" target="_blank">
+                  <i class="iconfont icon-zhihu"></i>
+                  <span class="label">Zhihu</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.weixingongzhonghao_username %}
+<!--               Weixingongzhonghao -->
+              <li class="navigation__item">
+                <a href=" " title="{{ site.author.weixingongzhonghao_username }}" target="_blank">
+                  <i class="iconfont icon-weixingongzhonghao"></i>
+                  <span class="label">Weixingongzhonghao</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.weibo_username %}
+<!--               Weibo -->
+              <li class="navigation__item">
+                <a href="https://weibo.com/u/{{ site.author.weibo_username }}" title="Weibo" target="_blank">
+                  <i class="iconfont icon-weibo"></i>
+                  <span class="label">Weibo</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.linkedin_username %}
+<!--               LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="LinkedIn" target="_blank">
+                  <i class="iconfont icon-linkedin""></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.facebook_username %}
+<!--               Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="Facebook" target="_blank">
+                  <i class="iconfont icon-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.twitter_username %}
+<!--               LinkedIn -->
+              <li class="navigation__item">
+                <a href="" title="" target="_blank">
+                  <i class="iconfont icon-twitter""></i>
+                  <span class="label">twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+
+
+            {% if site.author.ins_username %}
+<!--               Ins -->
+              <li class="navigation__item">
+                <a href="" title="{{ site.author.ins_username }} on ins" target="_blank">
+                  <i class="iconfont icon-instagram"></i>
+                  <span class="label">Instagram</span>
+                </a>
+              </li>
+            {% endif %}
+
+
+
+<!--            {% if site.author.twitter_username %}-->
+<!--&lt;!&ndash;               Twitter &ndash;&gt;-->
+<!--              <li class="navigation__item">-->
+<!--                <a href="https://www.linkedin.com/in/peiyuan-liao" title="LinkedIn" class="no-mark-external">-->
+<!--                  <span class="icon-linkedin2"></span> <span class="sr-only">LinkedIn</span>-->
+<!--                </a>-->
+<!--              <li>-->
+<!--            {% endif %}-->
+
+
+
+
+<!--&lt;!&ndash;             RSS &ndash;&gt;-->
+<!--            <li class="navigation__item">-->
+<!--              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">-->
+<!--                <i class="icon icon-rss"></i>-->
+<!--                <span class="label">RSS</span>-->
+<!--              </a>-->
+<!--            </li>-->
 
             </ul>
           </nav>

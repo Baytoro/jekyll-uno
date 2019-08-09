@@ -1,6 +1,6 @@
 # Site settings
 title: Home | H.J. Chen
-description: 'AI & Edge Computing PhD candidate @ ThU '
+description: 'AI & Edge Computing PhD candidate @ THU '
 url: 'http://baytoro.github.io/'
 
 baseurl: ''
@@ -10,10 +10,17 @@ baseurl: ''
 author:
   name: 'Hongjiang Chen'
   email: hjchen0725@hotmail.com
-  twitter_username: nodd
-  facebook_username: joshgerdes
+
   github_username:  baytoro
-  linkedin_username:  joshgerdes
+  kaggle_username: baytoro
+  zhihu_username: baytoro
+#  weibo_username: 3263963512
+#  weixingongzhonghao_username: test
+  linkedin_username:  chenhongjiang
+
+#  twitter_username: test
+#  facebook_username: test
+#  ins_username: test
 
 defaults:
   -
