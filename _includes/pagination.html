@@ -1,7 +1,10 @@
-<nav class="pagination" role="navigation">
+<nav class="pagination" role="navigation" style="
+    margin-bottom: 0px;
+    margin-top: 64px;
+">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-      <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}/#blog" title="Previous Page">← Newer Posts</a>
+      <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}/#blog" title="Previous Page" style="padding-left: 2px;">← Newer Posts</a>
     {% else %}
       <a rel="prev" class="posts newer btn small" href="{{ site.baseurl }}/page{{ paginator.previous_page }}/">← Newer Posts</a>
     {% endif %}

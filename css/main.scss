@@ -24,7 +24,7 @@ pre.highlight code,
 
 .pagination__page-number {
   display: inline-block;
-  padding: 10px;
+  padding: 2px;
 }
 
 .categories a,
@@ -56,4 +56,14 @@ pre.highlight code,
   height: 100px;
   //border: 2px solid #fff;
   border-radius:25%;
+}
+
+.blog-image{
+  margin-bottom: 0.0em;
+  position: relative;
+  width: 190px;
+  height: 120px;
+  //border: 2px solid #fff;
+  border-radius:9px;
+  box-shadow: 3px 3px 6px #888;
 }
