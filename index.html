@@ -11,7 +11,7 @@ robots: noindex
         <h5 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h5>
         <div class style="display: flex;">
         <div class style="margin-right: 20px;" >
-           <img src="{{ site.baseurl }}/images/cover.jpg" class="blog-image" alt="My Profile Photo" >
+           <img src="{{ site.baseurl }}/images/post_image/{{post.cover}}" class="blog-image" alt="My Profile Photo" >
             <div class="post-list__meta" style="margin-top: 0px;">
             <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
             {% if post.tags.size > 0 %}
@@ -22,8 +22,10 @@ robots: noindex
            <div class>
             <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
             <div class style="display: flex;">
-                [<a href="https://google.com">Link1</a>]
-                [<a href="https://google.com">Link2</a>]
+                {% for res in post.resource %}
+                [<a href="{{res[1]}}">{{res[0]}}</a>]
+<!--                [<a href="https://google.com">Link2</a>]-->
+                {% endfor %}
             </div>
            </div>
         </div>
